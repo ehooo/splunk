@@ -19,3 +19,17 @@ docker-compose logs --tail=10 -f splunk
 ```bash
 docker-compose down --volumes
 ```
+
+## Build [App Inspector](https://dev.splunk.com/enterprise/docs/releaseapps/appinspect/) Docker
+```bash
+docker build --tag appinspect:latest --file=appinspect.Dockerfile .
+docker run --rm -ti --volume $PWD/app:/app appinspect:latest sh
+docker run --rm -ti --volume $PWD/app.tgz:/app.tgz appinspect:latest splunk-appinspect inspect app.tgz
+```
+
+
+## Build [Slim](https://dev.splunk.com/enterprise/docs/releaseapps/packagingtoolkit/) Docker
+```bash
+docker build --tag slim:latest --file=slim.Dockerfile .
+docker run --rm -ti --volume $PWD/app:/app slim:latest sh
+```

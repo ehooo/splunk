@@ -1,0 +1,29 @@
+[alert_actions]
+access = read : [ * ], write : [ * ]
+
+[app]
+access = read : [ * ], write : [ * ]
+
+[eventtypes]
+access = read : [ * ], write : [ * ]
+
+[html]
+access = read : [ * ], write : [ * ]
+
+[lookups]
+access = read : [ * ], write : [ * ]
+
+[savedsearches]
+access = read : [ * ], write : [ * ]
+
+[searchscripts]
+access = read : [ * ], write : [ * ]
+
+[views]
+access = read : [ * ], write : [ * ]
+
+[tags]
+access = read : [ * ], write : [ * ]
+
+[visualizations]
+access = read : [ * ], write : [ * ]

@@ -12,6 +12,7 @@ services:
       - "var:/opt/splunk/var"
       - "etc:/opt/splunk/etc"
       - "./system_local/authentication.conf:/opt/splunk/etc/system/local/authentication.conf"
+      - "./system_local/log-local.cfg:/opt/splunk/etc/log-local.cfg"
       - "./splunk_sample_app:/opt/splunk/etc/apps/splunk_sample_app"
     ports:
       - "8000:8000"
